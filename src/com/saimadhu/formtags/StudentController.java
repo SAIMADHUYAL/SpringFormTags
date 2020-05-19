@@ -1,5 +1,8 @@
 package com.saimadhu.formtags;
 
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -8,11 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class StudentController {
 
+	@Value("#{countryList}")
+	private Map<String, String> countryList;
 	@RequestMapping("/showForm")
 	public String showForm(Model model) {
 		
 		//Add the Student object to the model
 		model.addAttribute("student",new Student());
+		model.addAttribute("countryList",countryList);
 		return "student-form";
 	}
 	
