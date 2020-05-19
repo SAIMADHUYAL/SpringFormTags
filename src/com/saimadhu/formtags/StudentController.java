@@ -31,6 +31,7 @@ public class StudentController {
 		System.out.println("The name of the Student is : " +student.getFirstName()+" "+student.getLastName());
 		System.out.println("Country : "+student.getCountry());
 		System.out.println("Favorite Language is: "+student.getFav_language());
+		System.out.println("Operating Systems: "+student.getOperatingSystems());
 		return "student-confirmation";
 	}
 }

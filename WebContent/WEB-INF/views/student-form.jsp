@@ -28,8 +28,13 @@
 			PHP<form:radiobutton path="fav_language" value="PHP"/>
 			HTML<form:radiobutton path="fav_language" value="HTML"/>
 			CSS<form:radiobutton path="fav_language" value="CSS"/>
+		
 			
 			<br><br>
+			Operating System:
+			MacOS<form:checkbox path="operatingSystems" value="MacOS"/>
+			Linux<form:checkbox path="operatingSystems" value="Linux"/>
+			Windows<form:checkbox path="operatingSystems" value="Windows"/>
 			<input type="submit" value="Submit" /><!-- After submitting the spring sets the feilds i.e., student.setFirstName() & student.setLastName() -->
 		</form:form>
 	</body>

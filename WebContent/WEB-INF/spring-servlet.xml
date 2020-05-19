@@ -27,6 +27,7 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 	<util:properties id="countryList" location="classpath:../properties/countryList.properties"></util:properties>
+	
 
 </beans>
 
