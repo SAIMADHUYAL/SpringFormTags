@@ -16,9 +16,18 @@
 			<br><br>
 			
 			Country:
+			<!-- Creating Drop Down List -->
 			<form:select path="country">
 				<form:options items="${countryList }"/>
 			</form:select>
+			
+			<br><br>
+			Favorite Language:
+			<!-- Creating Radio Buttons -->
+			Java<form:radiobutton path="fav_language" value="Java"/>
+			PHP<form:radiobutton path="fav_language" value="PHP"/>
+			HTML<form:radiobutton path="fav_language" value="HTML"/>
+			CSS<form:radiobutton path="fav_language" value="CSS"/>
 			<input type="submit" value="Submit" /><!-- After submitting the spring sets the feilds i.e., student.setFirstName() & student.setLastName() -->
 		</form:form>
 	</body>
